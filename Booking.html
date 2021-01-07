@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Booking</title>
+<link href="css/simpleGridTemplate.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div class="container">
+  <header class="header" style="border: hidden; display:block" align="center">
+    <button id="button1" class="button" style="font-size: 24px">我的订单</button>
+	<button id="button2" class="button" style="font-size: 24px">我的账户</button>
+	<button id="button3" class="button" style="font-size: 24px">登录</button>
+	<button id="button4" class="button" style="font-size: 24px">注册</button>
+  </header>
+  <div align="center" style="vertical-align: middle">
+	<form style="font-weight: bold; background: #B3B3B3" >
+	 <input type="text" name="searchValue" style="border:thick; border-color: #6DC7D0; border-style: solid; height: 20px; 	border-radius: 10px; height: 30px; width: 360px; font-size: 18px">
+	 <input id="search" type="submit" value="搜索酒店" class="button" style="font-size: 18px; height: 40px; width: 150px; 	padding-bottom: 0px; padding-top: 0px; margin-top: 0px; margin-bottom: 5px">
+	</form>
+  </div>
+	<h2 id="hotelName" align="center">text</h2>
+  <div class="gallery" style="display: flex; justify-content: center">
+	<img src="images/bkg_06.jpg" alt="" width="200" class="cards" id="img1" style="width: 350px"/>
+	<img src="images/bkg_06.jpg" alt="" width="200" class="cards" id="img2" style="width: 350px"/>
+	<img src="images/bkg_06.jpg" alt="" width="200" class="cards" id="img3" style="width: 350px"/>
+  </div>
+  <div align="center" style="padding-bottom: 50px">
+    <form>
+	  <div style="display: flex; justify-content: center; vertical-align: middle">
+	      <div style="font-weight: bold; font-size: 20px; font: oblique; text-align: center; vertical-align: middle">
+		    <p>入住日期:</p>
+		  </div>
+		  <div align="center" style="padding-left: 30px; vertical-align: middle">
+	        <input type="date" value="aaaa" style="border:medium; border-color: #6DC7D0; border-style: solid; height: 20px; border-radius: 10px; height: 30px; width: 200px; font-size: 18px; margin-top: 15px">
+		  </div>
+	  </div>
+		
+	  <div style="display: flex; justify-content: center; vertical-align: middle">
+	      <div style="font-weight: bold; font-size: 20px; font: oblique; text-align: center; vertical-align: middle">
+		    <p>离店日期:</p>
+		  </div>
+		  <div align="center" style="padding-left: 30px; vertical-align: middle">
+	        <input type="date" value="aaaa" style="border:medium; border-color: #6DC7D0; border-style: solid; height: 20px; border-radius: 10px; height: 30px; width: 200px; font-size: 18px; margin-top: 15px">
+		  </div>
+	  </div>
+	  
+      <div style="display: flex; justify-content: center; vertical-align: middle">
+	      <div style="font-weight: bold; font-size: 20px; font: oblique; text-align: center; vertical-align: middle">
+		    <p>房间类型:</p>
+		  </div>
+		  <div align="center" style="padding-left: 30px; vertical-align: middle">
+	        <select name="roomType" style="border:medium; border-color: #6DC7D0; border-style: solid; height: 20px; border-radius: 10px; height: 30px; width: 100px; font-size: 18px; margin-top: 15px">
+				<option value="标间">标间</option>
+				<option value="单人间">单人间</option>
+				<option value="套房">套房</option>
+				<option value="商务间">商务间</option>
+			</select>
+		  </div>
+	  </div>
+		
+      <div style="display: flex; justify-content: center; vertical-align: middle">
+	      <div style="font-weight: bold; font-size: 20px; font: oblique; text-align: center; vertical-align: middle">
+		    <p>房间个数:</p>
+		  </div>
+		  <div align="center" style="padding-left: 30px; vertical-align: middle">
+	        <input type="number" name="roomType" value=1 style="border:medium; border-color: #6DC7D0; border-style: solid; height: 20px; border-radius: 10px; height: 30px; width: 100px; font-size: 18px; margin-top: 15px" onInput="if(value<0)value=0">
+		  </div>
+	  </div>
+	  <input type="reset" class="button" value="重置" style="font-size: 20px; font-weight: bold">
+ 	  <input type="submit" class="button" value="立即预定" style="font-size: 20px; font-weight: bold">
+    </form>
+  </div>
+	<br>
+  <footer align="center">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <button class="button" id="contact" align="center" style="font-size: 16px"> EMAIL ME </button>
+  </footer>
+  <!-- Copyrights Section -->
+  <div class="copyright">&copy;copyrigth - <strong>肖炯辰</strong></div>
+</div>
+</body>
+</html>
